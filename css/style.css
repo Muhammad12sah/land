@@ -185,6 +185,7 @@ body {
 /* section description */
 
 .description {
+    margin-bottom: 100px;
     padding-top: 70px;
 }
 
@@ -217,17 +218,6 @@ body {
     font-weight: 500;
 }
 
-@media (max-width: 767px) {
-    .description__cards {
-        display: none;
-    }
-
-    .swiper {
-        display: block;
-        width: 100%;
-    }
-}
-
 @media (min-width: 768px) {
     .swiper {
         display: none;
@@ -235,6 +225,169 @@ body {
 }
 
 /* section description */
+
+/* section forBuyers */
+
+.forBuyers {
+    margin-bottom: 70px;
+}
+
+.forBuyers .container {
+    background: #FFFFFF;
+    padding: 50px;
+    border-radius: 30px;
+}
+
+.forBuyers__title {
+    font-size: 60px;
+    color: #1E2631;
+    margin-bottom: 20px;
+}
+
+.forBuyers__txt {
+    color: #1E2631B2;
+    margin-bottom: 50px;
+}
+
+.forBuyers__cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: #13212F;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.forBuyers__card {
+    max-width: 560px;
+    width: 100%;
+    height: 300px;
+    background: #192939;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gazeta-img {
+    width: 520px;
+}
+
+.forBuyers__card-txt {
+    color: #fff;
+    font-size: 18px;
+}
+
+/* section forBuyers */
+
+/* section forSellers */
+
+.forSellers {
+    padding-bottom: 150px;
+}
+
+.forSellers .container {
+    background: url(../image/forSellers-bg.png)center center / cover no-repeat;
+    width: 100%;
+    min-height: 100%;
+    border-radius: 50px;
+}
+
+.forSellers__title {
+    color: #fff;
+    font-size: 60px;
+    padding: 70px;
+}
+
+.forSellers__cards {
+    padding: 70px;
+}
+
+.forSellers__card {
+    display: flex;
+    align-items:first baseline;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.forSellers__card span {
+    display: block;
+    background: #2C455D;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.forSellers__card-desc-title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.forSellers__card-desc-txt {
+    color: #5785B2;
+}
+
+/* section forSellers */
+
+/* section advantages */
+
+.advantages__title {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #1E2631;
+}
+
+.advantages__txt {
+    color: #1E2631;
+    margin-bottom: 60px;
+}
+
+.advantages__parent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.advantages__desc {
+    background: #fff;
+    padding: 30px;
+    border-radius: 30px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.advantages__desc-title {
+    color: #192939;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.advantages__desc-txts {
+    margin-bottom: 20px;
+}
+
+.advantages__desc-txt {
+    font-size: 18px;
+    color: #192939;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.advantages__desc-span {
+    color: #192939;
+}
+
+
+/* section advantages */
 
 @media (max-width:1200px) {
     .header__image {
@@ -266,6 +419,27 @@ body {
     .header .container {
         flex-direction: column-reverse;
     }
+
+    .description__cards {
+        display: none;
+    }
+
+    .swiper {
+        display: block;
+        width: 100%;
+    }
+
+    .forBuyers__card-image {
+        width: 400px;
+    }
+
+    .forSellers .container {
+        background: #192939;
+    }
+
+    .advantages__image {
+        width: 650px;
+    }
 }
 
 @media (max-width: 680px) {
@@ -281,6 +455,10 @@ body {
     }
 
     .header__image-2 {
+        width: 550px;
+    }
+
+    .advantages__image {
         width: 550px;
     }
 }
@@ -338,6 +516,31 @@ body {
         width: 100%;
         text-align: center;
     }
+
+    .forBuyers__card {
+        height: auto;
+    }
+
+    .forBuyers__card-image {
+        width: 250px;
+        margin-bottom: 15px;
+    }
+
+    .forBuyers__card-txt {
+        font-size: 15px;
+    }
+
+    .forBuyers__title {
+        font-size: 45px;
+    }
+
+    .forBuyers__txt {
+        font-size: 15px;
+    }
+
+    .advantages__image {
+        width: 450px;
+    }
 }
 
 @media (max-width:480px) {
@@ -347,6 +550,28 @@ body {
 
     .header__image-2 {
         width: 340px;
+    }
+
+    .forSellers__title {
+        font-size: 40px;
+        padding-bottom: 30px;
+        padding: 50px;
+    }
+
+    .forSellers__cards {
+        padding: 50px;
+    }
+
+    .advantages__title  {
+        font-size: 45px;
+    }
+
+    .advantages__desc-title {
+        font-size: 28px;
+    }
+
+    .advantages__image {
+        width: 380px;;
     }
 }
 
@@ -371,6 +596,27 @@ body {
     .header__image {
         left: -19%;
     }
+
+    .forBuyers__card-image {
+        width: 170px;
+    }
+
+    .forBuyers__title {
+        font-size: 35px;
+    }
+
+    
+    .forSellers__title {
+        padding: 30px;
+    }
+
+    .forSellers__cards {
+        padding: 30px;
+    }
+
+    .advantages__image {
+        width: 360px;;
+    }
 }
 
 @media (max-width: 375px) {
@@ -389,5 +635,9 @@ body {
 
     .header__title {
         font-size: 45px;
+    }
+
+    .advantages__image {
+        width: 330px;;
     }
 }
