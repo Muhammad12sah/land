@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -51,7 +52,6 @@
         </div>
     </nav>
 
-
     <header class="header">
         <div class="container">
             <div class="header__desc">
@@ -68,7 +68,57 @@
         </div>
     </header>
 
+    <main>
+        <section class="description">
+            <div class="container">
+                <div class="description__cards">
+                    <div class="description__card">
+                        <img src="./image/security-icon.png" alt="" class="description__card-image">
+                        <h3 class="description__card-title">Безопасная сделка</h3>
+                    </div>
+                    <div class="description__card">
+                        <img src="./image/dilevery-icon.png" alt="" class="description__card-image dilevery-img">
+                        <h3 class="description__card-title">Быстрая доставка</h3>
+                    </div>
+                    <div class="description__card">
+                        <img src="./image/buy-and-sale-icon.png" alt="" class="description__card-image">
+                        <h3 class="description__card-title">Удобная покупка</h3>
+                    </div>
+                </div>
+
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./image/security-icon.png" alt="" class="description__card-image">
+                            <h3 class="description__card-title">Безопасная сделка</h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/dilevery-icon.png" alt="" class="description__card-image dilevery-img">
+                            <h3 class="description__card-title">Быстрая доставка</h3>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/buy-and-sale-icon.png" alt="" class="description__card-image">
+                            <h3 class="description__card-title">Удобная покупка</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <script src="script.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        if (window.innerWidth <= 767) {
+            new Swiper('.swiper', {
+                slidesPerView: 1.5,
+                spaceBetween: 20,
+                centeredSlides: true,
+                loop: true
+            });
+        }
+    </script>
 </body>
 
 </html>
