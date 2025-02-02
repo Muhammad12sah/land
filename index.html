@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <nav class="nav nav--desktop">
+        <div class="container">
+            <a href="" class="nav__logo">
+                <img src="./image/logo.svg" alt="">
+            </a>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="" class="nav__link">Частным лицам</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Покупателям</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Продавцам</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Бизнесу</a></li>
+            </ul>
+            <div class="nav__btns">
+                <a href="" class="nav__btn-1">Войти</a>
+                <a href="" class="nav__btn-2 btn">Зарегистрироваться</a>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="nav nav--mobile">
+        <div class="container">
+            <a href="" class="nav__logo">
+                <img src="./image/logo.svg" alt="" class="nav__logo-image">
+            </a>
+            <div class="nav__helper">
+                <a href="" class="nav__btn-2 btn">Зарегистрироваться</a>
+                <button class="nav__burger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <ul class="nav__list nav__list--mobile">
+                <li class="nav__item"><a href="" class="nav__link">Частным лицам</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Покупателям</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Продавцам</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Бизнесу</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <header class="header">
+        <div class="container">
+            <div class="header__desc">
+                <h1 class="header__title">Покупайте и <br> продавайте выгодно <br> <span>вместе с Munity</span> </h1>
+                <p class="header__txt">Объявления от частных лиц, компаний и маркетплейс в <br> одном сервисе</p>
+                <a href="" class="header__btn btn">Зарегистрироваться</a>
+            </div>
+            <div class="header__image-1">
+                <img src="./image/header-ipad.png" alt="" class="header__image-1">
+                <div class="header__image">
+                    <img src="./image/header-preview.png" alt="" class="header__image-2">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
