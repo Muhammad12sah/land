@@ -737,6 +737,13 @@ body {
     .howBuy__card-number-txt {
         font-size: 20px;
     }
+
+}
+
+@media (max-width: 460px) {
+    .business-card__image img.ipad {
+        max-width: 220px;
+    }
 }
 
 @media (max-width:414px) {
@@ -787,7 +794,7 @@ body {
     }
 
     .business-card__image img.ipad {
-        max-width: 230px;
+        max-width: 210px;
     }
 
     .business-card__image img.iphone {
