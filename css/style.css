@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -597,12 +598,192 @@ body {
 
 /* ection adss */
 
+/* section banner */
+
+.banner {
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.banner .container {
+    position: relative;
+    display: flex;
+}
+
+.banner__desc {
+    width: 650px;
+    padding: 70px;
+    border-radius: 30px;
+    background: #159A75;
+}
+
+.banner__title {
+    position: relative;
+    color: #fff;
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.banner__title::after {
+    content: url(../image/star-1.png);
+    position: absolute;
+    top: -30%;
+    right: 15%;
+}
+
+.banner__title::before {
+    content: url(../image/star-2.png);
+    position: absolute;
+    bottom: -40%;
+    left: -7%;
+}
+
+.banner__txt {
+    color: #fff;
+}
+
+.banner__image {
+    position: absolute;
+    left: 42%;
+    z-index: -1;
+    border-radius: 30px;
+}
+
+
+/* section banner */
+
+/* section blog */
+
+.blog__title {
+    font-size: 60px;
+    color: #1E2631;
+    font-weight: 600;
+    margin-bottom: 63px;
+}
+
+.blog__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.blog__card {
+    max-width: 630px;
+    width: 100%;
+    padding: 50px 0 0 50px;
+    border-radius: 30px;
+    background: #fff;
+}
+
+.blog__card:nth-child(1){
+    background: #192939;
+}
+
+.blog__card-title {
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.blog__card-image {
+    display: grid;
+    place-self: end;
+}
+
+/* section blog */
+
+/* footer */
+
+.footer {
+    background: #13212F;
+    padding: 100px 60px;
+    margin-top: 100px;
+}
+
+.footer__title {
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+
+.footer__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 122px;
+}
+
+.footer__card {
+    max-width: 414px;
+    width: 100%;
+    padding: 30px;
+    background: #fff;
+    border-radius: 30px;
+}
+
+.footer__card-image {
+    margin-bottom: 31px;
+}
+
+.footer__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.footer__link {
+    color: #5785B2;
+}
+
+.footer__banner {
+    width: 340px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #0F1B28;
+}
+
+.footer__banner-txt {
+    color: #fff;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.footer__banner-subtitle {
+    color: #5785B280;
+}
+
+/* footer */
+
+
 
 @media (max-width:1200px) {
     .header__image {
         position: absolute;
         left: 0;
         bottom: 0;
+    }
+
+    .banner__image {
+        width: 640px;
+        left: 0;
+    }
+
+    .banner .container {
+        position: unset;
+        display: block;
     }
 
 }
@@ -671,6 +852,16 @@ body {
 
     .business-card__ellipse {
        display: none;
+    }
+
+    .banner__desc {
+        margin: 0 auto;
+        width: 600px;
+    }
+
+    .banner__image {
+        position: unset;
+        width: 550px;
     }
 }
 
@@ -785,6 +976,21 @@ body {
     .ads__card-image {
         width: 250px;
     }
+
+    .banner__desc {
+        width: 500px;
+        padding: 45px;
+    }
+
+    .banner__title::after {
+        right: -5%;
+    }
+
+    .banner__image {
+        display: grid;
+        place-self: center;
+        width: 500px;
+    }
 }
 
 @media (max-width:480px) {
@@ -822,6 +1028,28 @@ body {
         font-size: 20px;
     }
 
+    .banner__desc {
+        width: 400px;
+        padding: 40px;
+    }
+
+    .banner__title::after {
+        top: 0;
+    }
+
+    .banner__image {
+        width: 400px;
+    }
+
+    .footer__title {
+        font-size: 45px;
+    }
+
+    .footer__list {
+        flex-direction: column;
+        align-items: start;
+    }
+
 }
 
 @media (max-width: 460px) {
@@ -839,6 +1067,22 @@ body {
 
     .ads__card-txt {
         font-size: 15px;
+    }
+
+    .banner__desc {
+        width: 300px;
+    }
+
+    .banner__title::before {
+        bottom: -10%;
+    }
+
+    .banner__image {
+        width: 300px;
+    }
+
+    .footer__card-image {
+        width: 200px;
     }
    
 }
@@ -943,5 +1187,13 @@ body {
 
     .ads__card-image {
         width: 170px;
+    }
+
+    .footer__card-image {
+        width: 150px;
+    }
+
+    .footer__card-title {
+        font-size: 16px;
     }
 }
