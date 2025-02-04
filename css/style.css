@@ -395,6 +395,14 @@ body {
     color: #192939;
 }
 
+.advantages__desc-mobile {
+    display: none;
+}
+
+.advantages__image-mobile {
+    display: none;
+}
+
 /* section advantages */
 
 /* section howBuy */
@@ -426,6 +434,7 @@ body {
     width: 100%;
     background: #192939;
     padding: 30px;
+    border-radius: 20px;
 }
 
 .howBuy__card-number {
@@ -655,6 +664,15 @@ body {
     left: 42%;
     z-index: -1;
     border-radius: 30px;
+    max-width: 100%;
+}
+
+.banner__image-mobile {
+    display: none;
+}
+
+.banner__desc-mobile {
+    display: none;
 }
 
 
@@ -785,8 +803,8 @@ body {
     }
 
     .banner__image {
+        position: unset;
         width: 640px;
-        left: 0;
     }
 
     .banner .container {
@@ -876,12 +894,29 @@ body {
     .banner__desc {
         margin: 0 auto;
         width: 600px;
+        display: none;
     }
 
     .banner__image {
-        position: unset;
-        width: 550px;
+        display: none;
     }
+
+    .banner__image-mobile {
+        display: block;
+        transform: translateY(-15%);
+        z-index: -111;
+    }
+
+    .banner__desc-mobile {
+        display: grid;
+        position: relative;
+        width: 100%;
+        z-index: 99;
+    }
+
+    /* .banner__image {
+        width: 550px;
+    } */
 }
 
 @media (max-width: 680px) {
@@ -984,9 +1019,25 @@ body {
         font-size: 15px;
     }
 
+    .advantages__desc {
+        display: none;
+    }
+
+    .advantages__desc-mobile {
+        display: block;
+    }
+
     .advantages__image {
         width: 450px;
+        display: none;
     }
+
+    .advantages__image-mobile {
+        display: block;
+        width: 100%;
+        transform: translateY(-5%);
+    }
+
 
     .howBuy__title {
         font-size: 45px;
@@ -996,20 +1047,20 @@ body {
         width: 250px;
     }
 
-    .banner__desc {
+    /* .banner__desc {
         width: 500px;
         padding: 45px;
-    }
+    } */
 
     .banner__title::after {
         right: -5%;
     }
 
-    .banner__image {
+    /* .banner__image {
         display: grid;
         place-self: center;
         width: 500px;
-    }
+    } */
 }
 
 @media (max-width:480px) {
@@ -1039,27 +1090,27 @@ body {
         font-size: 28px;
     }
 
-    .advantages__image {
+    /* .advantages__image {
         width: 380px;
         ;
-    }
+    } */
 
     .howBuy__card-number-txt {
         font-size: 20px;
     }
 
-    .banner__desc {
+    /* .banner__desc {
         width: 400px;
         padding: 40px;
-    }
+    } */
 
     .banner__title::after {
         top: 0;
     }
 
-    .banner__image {
+    /* .banner__image {
         width: 400px;
-    }
+    } */
 
     .footer__title {
         font-size: 45px;
@@ -1089,17 +1140,17 @@ body {
         font-size: 15px;
     }
 
-    .banner__desc {
+    /* .banner__desc {
         width: 300px;
-    }
+    } */
 
     .banner__title::before {
         bottom: -10%;
     }
 
-    .banner__image {
+    /* .banner__image {
         width: 300px;
-    }
+    } */
 
     .footer__card-image {
         width: 200px;
@@ -1150,10 +1201,10 @@ body {
         padding: 30px;
     }
 
-    .advantages__image {
+    /* .advantages__image {
         width: 360px;
         ;
-    }
+    } */
 
     .howBuy__card-number-txt {
         font-size: 18px;
@@ -1192,10 +1243,10 @@ body {
         font-size: 45px;
     }
 
-    .advantages__image {
+    /* .advantages__image {
         width: 330px;
         ;
-    }
+    } */
 
     .howBuy__title {
         font-size: 40px;
