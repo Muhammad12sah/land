@@ -261,6 +261,10 @@ body {
     border-radius: 30px;
 }
 
+.mobile--cards {
+    display: none;
+}
+
 .forBuyers__card {
     max-width: 560px;
     width: 100%;
@@ -310,7 +314,7 @@ body {
 
 .forSellers__card {
     display: flex;
-    align-items:first baseline;
+    align-items: first baseline;
     gap: 10px;
     margin-bottom: 20px;
 }
@@ -560,13 +564,16 @@ body {
 @media (min-width: 768px) {
     .ads__cards {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 элемента на экране */
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 элемента на экране */
         gap: 20px;
-        overflow-x: hidden; /* Убираем горизонтальную прокрутку */
+        overflow-x: hidden;
+        /* Убираем горизонтальную прокрутку */
     }
 
     .ads__card {
-        width: 100%; /* Заполняет доступную ширину */
+        width: 100%;
+        /* Заполняет доступную ширину */
         max-width: none;
     }
 }
@@ -582,7 +589,8 @@ body {
     }
 
     .ads__card {
-        flex: 0 0 calc(50% - 10px); /* Каждая карточка займет 50% ширины */
+        flex: 0 0 calc(50% - 10px);
+        /* Каждая карточка займет 50% ширины */
         scroll-snap-align: start;
     }
 
@@ -676,7 +684,7 @@ body {
     background: #fff;
 }
 
-.blog__card:nth-child(1){
+.blog__card:nth-child(1) {
     background: #192939;
 }
 
@@ -819,6 +827,16 @@ body {
         width: 100%;
     }
 
+    .forBuyers__cards {
+        display: none;
+    }
+
+    .mobile--cards {
+        display: grid;
+        gap: 20px;
+        transform: translateY(-15%);
+    }
+
     .forBuyers__card-image {
         width: 400px;
     }
@@ -836,7 +854,8 @@ body {
         text-align: center;
     }
 
-    .business-card__content, .business-card__image {
+    .business-card__content,
+    .business-card__image {
         max-width: 100%;
     }
 
@@ -851,7 +870,7 @@ body {
     }
 
     .business-card__ellipse {
-       display: none;
+        display: none;
     }
 
     .banner__desc {
@@ -1012,7 +1031,7 @@ body {
         padding: 50px;
     }
 
-    .advantages__title  {
+    .advantages__title {
         font-size: 45px;
     }
 
@@ -1021,7 +1040,8 @@ body {
     }
 
     .advantages__image {
-        width: 380px;;
+        width: 380px;
+        ;
     }
 
     .howBuy__card-number-txt {
@@ -1056,7 +1076,7 @@ body {
     .business-card__image img.ipad {
         max-width: 220px;
     }
-    
+
     .ads__card-image {
         width: 200px;
     }
@@ -1084,7 +1104,11 @@ body {
     .footer__card-image {
         width: 200px;
     }
-   
+
+    .nav__btn-2 {
+        margin-left: 20px;
+    }
+
 }
 
 @media (max-width:414px) {
@@ -1117,7 +1141,7 @@ body {
         font-size: 35px;
     }
 
-    
+
     .forSellers__title {
         padding: 30px;
     }
@@ -1127,7 +1151,8 @@ body {
     }
 
     .advantages__image {
-        width: 360px;;
+        width: 360px;
+        ;
     }
 
     .howBuy__card-number-txt {
@@ -1168,7 +1193,8 @@ body {
     }
 
     .advantages__image {
-        width: 330px;;
+        width: 330px;
+        ;
     }
 
     .howBuy__title {

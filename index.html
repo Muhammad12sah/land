@@ -88,15 +88,15 @@
 
                 <div class="swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" style="background: #fff; padding: 43px 30px; max-width: 414px; width: 100%; height: 220px; border-radius: 30px;" >
                             <img src="./image/security-icon.png" alt="" class="description__card-image">
                             <h3 class="description__card-title">Безопасная сделка</h3>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" style="background: #fff; padding: 43px 30px; max-width: 414px; width: 100%; height: 220px; border-radius: 30px;" >
                             <img src="./image/dilevery-icon.png" alt="" class="description__card-image dilevery-img">
                             <h3 class="description__card-title">Быстрая доставка</h3>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide" style="background: #fff; padding: 43px 30px; max-width: 414px; width: 100%; height: 220px; border-radius: 30px;" >
                             <img src="./image/buy-and-sale-icon.png" alt="" class="description__card-image">
                             <h3 class="description__card-title">Удобная покупка</h3>
                         </div>
@@ -119,6 +119,17 @@
                         <p class="forBuyers__card-txt">С легкостью находите товары, услуги и вакансии в вашем городе или
                             по всей стране.</p>
                     </div>
+                </div>
+            </div>
+            <div class="forBuyers__cards mobile--cards">
+                <div class="forBuyers__card">
+                    <img src="./image/gazeta.png" alt="" class="forBuyers__card-image gazeta-img">
+                    <p class="forBuyers__card-txt">Тысячи выгодных предложений от магазинов и частных продавцов.</p>
+                </div>
+                <div class="forBuyers__card">
+                    <img src="./image/search_image.png" alt="" class="forBuyers__card-image">
+                    <p class="forBuyers__card-txt">С легкостью находите товары, услуги и вакансии в вашем городе или
+                        по всей стране.</p>
                 </div>
             </div>
         </section>
@@ -367,9 +378,8 @@
     <script>
         if (window.innerWidth <= 767) {
             new Swiper('.swiper', {
-                slidesPerView: 1.5,
+                slidesPerView: 1.2,
                 spaceBetween: 20,
-                centeredSlides: true,
             });
         }
     </script>
