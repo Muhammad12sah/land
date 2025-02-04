@@ -533,6 +533,10 @@ body {
     max-width: 400px;
 }
 
+.business-mobile {
+    display: none;
+}
+
 /* section  business*/
 
 /* section ads */
@@ -917,6 +921,23 @@ body {
     /* .banner__image {
         width: 550px;
     } */
+
+    .business-section .container {
+      display: none;
+    }
+
+    .business-section {
+        border-radius: 50px;
+        background: #fff;
+        margin-top: 100px;
+    }
+
+    .business-mobile {
+        display: grid;
+        background: #fff;
+        padding: 50px;
+        border-radius: 50px;
+    }
 }
 
 @media (max-width: 680px) {
