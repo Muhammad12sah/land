@@ -1188,6 +1188,10 @@ body {
         padding: 100px 20px;
     }
 
+    .forSellers {
+        padding-bottom: 70px;
+    }
+
 }
 
 @media (max-width:414px) {
