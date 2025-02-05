@@ -296,7 +296,7 @@ body {
 }
 
 .forSellers .container {
-    background: url(../image/forSellers-bg.png)center center / cover no-repeat;
+    background: url(../image/forSellers-bg.svg)center center / cover no-repeat;
     width: 100%;
     min-height: 100%;
     border-radius: 50px;
@@ -1169,9 +1169,12 @@ body {
         bottom: -10%;
     }
 
-    /* .banner__image {
-        width: 300px;
-    } */
+    .banner__image {
+        transform: translateY(-14%);
+        border-radius: unset;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
 
     .footer__card-image {
         width: 200px;
@@ -1179,6 +1182,10 @@ body {
 
     .nav__btn-2 {
         margin-left: 20px;
+    }
+
+    .footer {
+        padding: 100px 20px;
     }
 
 }
