@@ -1495,11 +1495,13 @@ body {
        
     }
     .business-card {
-        padding-left: 0;
+        padding-left: 20px;
         margin-top: 96px;
+        text-align: left;
     }
 
     .business-section__description {
+ 
         width: 350px;
     }
 
@@ -1530,14 +1532,50 @@ body {
         border-bottom-left-radius: 30px;
     }
 
+    .banner {
+        margin-left: 0;
+    }
+
+    .banner__title {
+        width: 314px;
+        height: 72px;
+        font-size: 30px;
+    }
+
+    .banner__desc-mobile {
+        padding-left: 20px;
+    }
+
+
+    .banner img {
+
+    }
+
+    .blog {
+        margin-left: 20px;
+    }
+
+    .blog__card-title {
+        font-size: 30px;
+    }
+
     .footer__card-image {
         width: 200px;
+    }
+
+    .footer__title {
+        margin-left: 0;
+    }
+
+    .footer__cards {
+        margin-left: 0;
     }
 
    
 
     .footer {
         padding: 100px 20px;
+        min-height: 1570px;
     }
 
     .forSellers {
