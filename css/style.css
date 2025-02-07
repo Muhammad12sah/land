@@ -44,13 +44,13 @@ body {
 
 .nav {
     padding-top: 40px;
-    padding-bottom: 130px;
+    padding-bottom: 109px;
 }
 
 .nav .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    max-width: 1280px;
     background: #FBFBFB;
     padding: 20px;
     border-radius: 30px;
@@ -61,6 +61,7 @@ body {
     display: flex;
     align-items: center;
     gap: 30px;
+    margin-left: 89.5px;
 }
 
 .nav__link {
@@ -71,6 +72,8 @@ body {
 .nav__btns {
     display: flex;
     gap: 20px;
+    margin-left: 89.5px;
+
 }
 
 .nav__btn-1 {
@@ -153,6 +156,11 @@ body {
     flex-wrap: wrap;
 }
 
+
+.header__desc {
+    padding-left: 19px;
+}
+
 .header__title {
     font-size: 70px;
     font-weight: 600;
@@ -172,12 +180,14 @@ body {
 
 .header__image-1 {
     position: relative;
+    top: 3px;
+    left: 2px;
 }
 
 .header__image {
     position: absolute;
     left: -38%;
-    bottom: 0;
+    bottom: -10px;
 }
 
 
@@ -193,7 +203,7 @@ body {
 .description__cards {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    padding-left: 20px;
     gap: 20px;
 }
 
@@ -204,19 +214,25 @@ body {
     padding: 43px 30px;
     background: #fff;
     border-radius: 30px;
+    padding-top: 30p;
+}
+
+.description__card-imagedilevery-img {
+    
 }
 
 .description__card-image {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .dilevery-img {
-    height: 100px;
+    height: 116px;
 }
 
 .description__card-title {
     font-size: 20px;
     font-weight: 500;
+    margin-top: 3px;
 }
 
 @media (min-width: 768px) {
@@ -230,13 +246,14 @@ body {
 /* section forBuyers */
 
 .forBuyers {
-    margin-bottom: 70px;
+    margin-bottom: 76px;
 }
 
 .forBuyers .container {
+    width: 1300px;
     background: #FFFFFF;
     padding: 50px;
-    border-radius: 30px;
+    border-radius: 50px;
 }
 
 .forBuyers__title {
@@ -248,9 +265,11 @@ body {
 .forBuyers__txt {
     color: #1E2631B2;
     margin-bottom: 50px;
+    font-size: 20px;
 }
-
 .forBuyers__cards {
+    width: 1200px;
+    height: 328px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -268,7 +287,7 @@ body {
 .forBuyers__card {
     max-width: 560px;
     width: 100%;
-    height: 300px;
+    height: 268px;
     background: #192939;
     border-radius: 20px;
     padding: 20px;
@@ -296,6 +315,9 @@ body {
 }
 
 .forSellers .container {
+    max-width: 1280px;
+    height: 535px;
+    padding: 2px 0px 0px 0px;
     background: url(../image/forSellers-bg.svg)center center / cover no-repeat;
     width: 100%;
     min-height: 100%;
@@ -305,11 +327,11 @@ body {
 .forSellers__title {
     color: #fff;
     font-size: 60px;
-    padding: 70px;
+    padding: 70px 0px 40px 70px;
 }
 
 .forSellers__cards {
-    padding: 70px;
+    padding: 0px 0px 0px 70px ;
 }
 
 .forSellers__card {
@@ -338,7 +360,6 @@ body {
 .forSellers__card-desc-txt {
     color: #5785B2;
 }
-
 /* section forSellers */
 
 /* section advantages */
@@ -349,18 +370,22 @@ body {
 
 .advantages__title {
     font-size: 60px;
-    margin-bottom: 20px;
+    margin-top: 3px;
+    margin-left: 17px;
+    margin-bottom: 23px;
     color: #1E2631;
 }
 
 .advantages__txt {
     color: #1E2631;
     margin-bottom: 60px;
+    font-size: 20px;
+    margin-left: 17px;
 }
 
 .advantages__parent {
     display: flex;
-    justify-content: space-between;
+    margin-left: 19px;
     flex-wrap: wrap;
     gap: 30px;
 }
@@ -382,6 +407,7 @@ body {
 
 .advantages__desc-txts {
     margin-bottom: 20px;
+    padding-left: 20px;
 }
 
 .advantages__desc-txt {
@@ -389,7 +415,33 @@ body {
     color: #192939;
     margin-bottom: 8px;
     font-weight: 500;
+    position: relative;
+
+
 }
+
+.advantages__desc-btn.btn {
+    border: none;
+    margin: 35px 0px 0px 3px;
+
+}
+
+.advantages__desc-txt::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; /* Круглая форма */
+    background-color: #ed6742; /* Цвет кружки */background: rgba(232, 242, 243, 1);
+    
+    position: absolute;
+    top: 5px;
+    left: -20px; /* Позиционирование слева от текста */
+    
+}
+
+
+
+
 
 .advantages__desc-span {
     color: #192939;
@@ -408,9 +460,16 @@ body {
 /* section howBuy */
 
 .howBuy .container {
+    max-width: 1300px;
     background: #13212F;
     border-radius: 50px;
     padding: 50px;
+    height: 660px;
+    
+}
+
+.howBuy {
+    margin-left: 15px;
 }
 
 .howBuy__title {
@@ -431,11 +490,28 @@ body {
 
 .howBuy__card {
     max-width: 590px;
+    height: 153px;
     width: 100%;
     background: #192939;
     padding: 30px;
     border-radius: 20px;
 }
+
+.howBuy__card:last-child {
+    max-width: 590px;
+    height: 191px;
+    
+}
+
+.howBuy__card:nth-child(2) {
+    height: 153px;
+}
+
+.howBuy__card:nth-child(3) {
+    height: 191px;
+}
+
+
 
 .howBuy__card-number {
     display: flex;
@@ -459,45 +535,55 @@ body {
 /* section  business*/
 
 .business-section {
-    padding: 40px 20px;
+    padding: 100px 20px 0px;
 }
 
 .business-section .container {
+    max-width: 1280px;
+    height: 695px;
     background: #fff;
     padding: 50px;
     border-radius: 50px;
 }
 
 .business-section__title {
-    font-size: 36px;
+    width: 550px;
+    height: 92px;
+    font-size: 60px;
     font-weight: bold;
     color: #121212;
 }
 
 .business-section__description {
-    font-size: 16px;
+    width: 797px;
+    height: 72px;
+    font-size: 20px;
     color: #5b5b5b;
-    margin: 10px 0 30px;
+    margin: 0px 0 60px;
     max-width: 500px;
 }
 
 .business-card {
+    min-height: 410px;
     background-color: #122134;
-    border-radius: 20px;
+    border-radius: 30px;
     padding: 30px;
     display: flex;
-    justify-content: space-between;
+    overflow: hidden;
     align-items: center;
     color: white;
     position: relative;
 }
 
 .business-card__content {
+    width: 550.88px;
+    height: 175px;
     max-width: 50%;
+    padding-left: 20px;
 }
 
 .business-card__title {
-    font-size: 28px;
+    font-size: 38px;
     font-weight: bold;
 }
 
@@ -506,31 +592,42 @@ body {
 }
 
 .business-card__text {
-    font-size: 14px;
+    font-size: 18px;
     color: #8fa4b7;
-    margin-top: 10px;
+    margin-top: 39px;
 }
 
 .business-card__image {
-    position: relative;
+    position: absolute;
+    top: 62px;
+    left: 588px;
 }
 
 .business-card__image img.ipad {
-    max-width: 350px;
+    position: absolute;
+    max-width: 409px;
+    left: 196px;
+   
 }
 
 .business-card__image img.iphone {
     position: absolute;
-    top: 50px;
-    left: -50px;
+    top: 126px;
+    left: 246px;
     max-width: 200px;
 }
 
 .business-card__ellipse {
-    position: absolute;
-    top: 7%;
-    left: 65%;
+    position: absolute;   
+    top: 24%;
+    left: 70%;
     max-width: 400px;
+}
+
+.business-card__ellips {
+    position: absolute;  
+    left: 61%;
+    margin-top: 50px;
 }
 
 .business-mobile {
@@ -543,34 +640,50 @@ body {
 .ads {
     padding-top: 76px;
 }
+.ads .container {
+    max-width: 1280px;
+    height: 442px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 
 .ads__cards {
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    gap: 20px;
+    gap: 19px;
     scroll-snap-type: x mandatory;
     overflow-x: scroll;
 }
 
 .ads__card {
-    padding: 20px;
+    max-width: 415px;
+    height: 442px;
     border-radius: 30px;
-    max-width: 414px;
+    padding: 10px 11px 16px 10px;
     width: 100%;
     background: #fff;
     scroll-snap-align: start;
+ 
 }
 
+
 .ads__card-title {
+    width: 374px;
+    height: 29px;
     font-size: 24px;
     margin-top: 16px;
+    margin-left: 7px;
     color: #13212F;
     margin-bottom: 10px;
 }
 
 .ads__card-txt {
+    width: 374px;
+    height: 57px;
     color: #13212FB2;
+    margin-left: 7px;
 }
 
 /* Для экранов шириной 768px и выше */
@@ -624,6 +737,12 @@ body {
 .banner {
     padding-top: 100px;
     padding-bottom: 150px;
+    margin-left: 71px;
+}
+
+.banner .container {
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .banner .container {
@@ -684,6 +803,16 @@ body {
 
 /* section blog */
 
+
+.blog .container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.blog {
+   margin-left: 70px;
+}
+
 .blog__title {
     font-size: 60px;
     color: #1E2631;
@@ -692,13 +821,16 @@ body {
 }
 
 .blog__cards {
+    
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+
     gap: 20px;
 }
 
 .blog__card {
+    position: relative;
+    overflow: hidden;
     max-width: 630px;
     width: 100%;
     padding: 50px 0 0 50px;
@@ -706,25 +838,69 @@ body {
     background: #fff;
 }
 
+.blog__cards .blog__card:first-child {
+   width: 630px;
+   height: 312px;
+  }
+
+  .blog__cards .blog__card:nth-child(2),
+  .blog__cards .blog__card:nth-child(3),
+  .blog__cards .blog__card:nth-child(4) {
+    width: 630px;
+    height: 312px;
+  }
+  .blog__card p {
+    color: rgba(87, 133, 178, 1);
+    width: 340px;
+    height: 38px;
+  }
+  
+
 .blog__card:nth-child(1) {
+    overflow: hidden;
     background: #192939;
 }
 
 .blog__card-title {
+ 
     font-size: 38px;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
 .blog__card-image {
+    position: relative;
     display: grid;
     place-self: end;
+
 }
+
+.blog__card-imag {
+    position: absolute;
+    top: 180px;
+    left: 440px;
+}
+
+.blog__cards .blog__card:nth-child(1) .blog__card-image {
+    position: absolute;
+    top: 95px;
+    left: 356px;
+}
+
+
+.blog__cards .blog__card:nth-child(4) .blog__card-image {
+    position: absolute;
+    margin-left: 352px;
+    top: 160px;
+  }
 
 /* section blog */
 
 /* footer */
-
+.footer .container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
 .footer {
     background: #13212F;
     padding: 100px 60px;
@@ -735,18 +911,21 @@ body {
     color: #fff;
     font-size: 60px;
     margin-bottom: 60px;
+    margin-left: 37px;
 }
 
 .footer__cards {
     display: flex;
-    justify-content: space-between;
+ 
     flex-wrap: wrap;
     gap: 20px;
-    margin-bottom: 122px;
+    margin-bottom: 127px;
+    margin-left: 37px;
 }
 
 .footer__card {
     max-width: 414px;
+    height: 240px;
     width: 100%;
     padding: 30px;
     background: #fff;
@@ -754,15 +933,18 @@ body {
 }
 
 .footer__card-image {
-    margin-bottom: 31px;
+    margin-bottom: 10px;
 }
 
 .footer__bottom {
+    max-width: 1280px;
+    height: 115px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
+    margin-left: 37px;
 }
 
 .footer__list {
@@ -923,7 +1105,7 @@ body {
     } */
 
     .business-section .container {
-        display: none;
+      display: none;
     }
 
     .business-section {
@@ -1145,8 +1327,180 @@ body {
 }
 
 @media (max-width: 460px) {
+
+    .nav--mobile .container {
+        max-width: 350px;
+        height: 55px;
+        border-radius: 10px;
+        margin-left: 40px;
+
+     
+    }
+
+    .nav__helper {
+        width: 189px;
+        height: 35px;
+    }
+
+    .nav__logo-image {
+        width: 100px;
+    }
+
+    .nav__btn-2 {
+        width: 145px;
+        height: 35px;
+        margin-left: 15px;
+        font-size: 12px;
+        padding: 10px;
+
+    }
+
+    .header__image-1 {
+        margin-left: 20px;
+    }
+
+    .header__image-1 :nth-child(1) {
+        left: 30px;
+    }
+
+    .header__title {
+        width: 350px;
+        height: 192px;
+        font-size: 40px;
+    }
+
+    .header__txt {
+        width: 370px;
+        height: 44px;
+        font-size: 18px;
+        margin-bottom: 39px;
+    }
+
+
+    .nav__burger {
+        width: 24px;
+        height: 18px;
+        
+    }
+
+  
+    .forBuyers__cards {
+        width: 100%;
+        height: 392px;
+        position: absolute;
+        top: 1446px;
+
+    }
+
+    .forBuyers__cards .mobile--cards {
+        width: 100%;
+        height: 392px;
+      
+  
+    }
+  
+
+    .forBuyers__card {
+        width: 100%;
+        width: 350px;
+        height: 166px;
+    }
+
+    .forBuyers__card-txt {
+        position: absolute;
+        font-size: 10px;
+        width: 314px;
+        height: 30px;
+        margin-top: 113px;
+        margin-left: 40px;
+    }
+
+    .forBuyers .container {
+        position: relative;
+        width: 100%;
+        height: 628px;
+        margin-left: 0px;
+     
+    }
+
+    .howBuy .container {
+        width: 100%;
+        min-height: 941px;
+    }
+
+    .howBuy__card {
+        min-width: 350px;
+        height: 140px;
+        font-size: 14px;
+        padding-top: 15px;
+    }
+
+   
+
+    .howBuy__card:nth-child(2) {
+        min-width: 350px;
+        height: 174px;
+        font-size: 14px;
+    }
+
+    .howBuy__card:nth-child(3) {
+        width: 350px;
+        height: 140px;
+        font-size: 14px;
+    }
+
+    
+    .howBuy__card:nth-child(4) {
+        width: 350px;
+        height: 174px;
+        font-size: 14px;
+ 
+    }
+
+
     .business-card__image img.ipad {
         max-width: 220px;
+    }
+
+    .howBuy {
+        margin-left: 0px;
+        height: 1041px;
+    }
+
+    .howBuy .container {
+        height: 1041px;
+        padding-left: 40px;
+    }
+
+   
+
+    .howBuy__cards {
+        margin-left: 0px;
+    }
+
+
+    .business-card {
+        width: 350px;
+        height: 527px;
+    }
+
+    .business-mobile {
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+
+
+    .business-section__title {
+        width: 350px;
+       
+    }
+    .business-card {
+        padding-left: 0;
+        margin-top: 96px;
+    }
+
+    .business-section__description {
+        width: 350px;
     }
 
     .ads__card-image {
@@ -1180,9 +1534,7 @@ body {
         width: 200px;
     }
 
-    .nav__btn-2 {
-        margin-left: 20px;
-    }
+   
 
     .footer {
         padding: 100px 20px;
@@ -1192,9 +1544,37 @@ body {
         padding-bottom: 70px;
     }
 
+    .forSellers__title {
+        padding-bottom: 0;
+        padding-left: 21px;
+    }
+
+    .forSellers__cards {
+        padding-top: 40;
+        padding-left: 21px;
+    }
+
+    .forSellers__card {
+        margin-bottom: 0;
+    }
+
+
+    .forSellers__card-desc-txt {
+        width: 329px;
+        height: 85px;
+        font-size: 13px;
+        padding-top: 0;
+    }
+
 }
 
 @media (max-width:414px) {
+   
+    .nav--mobile .container {
+        margin-left: 20px;
+    }
+
+
     .nav__btn-2 {
         font-size: 14px;
         padding: 10px;
@@ -1307,120 +1687,3 @@ body {
     }
 }
 
-@media only screen and (max-width: 430px) and (max-height: 932px) {
-
-    /* Корректировка изображений в header */
-    .header__image-1 {
-        width: 250px;
-        right: -10%;
-    }
-
-    .header__image {
-        left: -15%;
-    }
-
-    .header__image-2 {
-        width: 320px;
-    }
-
-    /* Уменьшение шрифта для заголовков в header */
-    .header__title {
-        font-size: 50px;
-    }
-
-    /* Корректировка для мобильных карт */
-    .forBuyers__card-image {
-        width: 220px;
-    }
-
-    .forBuyers__title {
-        font-size: 40px;
-    }
-
-    /* Стили для блока продавцов */
-    .forSellers__title {
-        font-size: 40px;
-        padding-bottom: 30px;
-    }
-
-    .forSellers__cards {
-        padding: 50px;
-    }
-
-    /* Корректировка шрифтов в advantages */
-    .advantages__title {
-        font-size: 42px;
-    }
-
-    .advantages__desc-title {
-        font-size: 26px;
-    }
-
-    /* Размеры изображений в business-card */
-    .business-card__image img.ipad {
-        max-width: 190px;
-    }
-
-    .business-card__image img.iphone {
-        max-width: 110px;
-        left: 0;
-        top: 50px;
-    }
-
-    /* Размеры карточек в рекламе */
-    .ads__card-image {
-        width: 200px;
-    }
-
-    .footer__card-image {
-        width: 210px;
-    }
-
-    .footer__card-title {
-        font-size: 18px;
-    }
-
-    /* Корректировка высоты изображений в баннере */
-    .banner__image {
-        width: 400px;
-    }
-
-    /* Оптимизация шрифтов */
-    .howBuy__title {
-        font-size: 38px;
-    }
-
-    /* Блоки с описанием и картинками */
-    .banner__desc {
-        width: 350px;
-        padding: 30px;
-    }
-
-    .banner__desc-mobile {
-        display: block;
-        z-index: 100;
-    }
-
-    /* Убираем/корректируем изображение слайда */
-    .swiper {
-        display: block;
-        width: 100%;
-    }
-
-    /* Обновление кнопок навигации */
-    .nav__btn-2 {
-        font-size: 16px;
-        padding: 12px 15px;
-    }
-
-    /* Подкорректируем размеры для футера */
-    .footer__title {
-        font-size: 42px;
-    }
-
-    .footer__list {
-        flex-direction: column;
-        align-items: start;
-    }
-
-}
