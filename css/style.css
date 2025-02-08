@@ -1552,7 +1552,7 @@ body {
     }
 
     .blog {
-        margin-left: 20px;
+        margin-left: 0px;
     }
 
     .blog__card-title {
@@ -1614,7 +1614,7 @@ body {
 
 
     .nav__btn-2 {
-        font-size: 14px;
+        font-size: 12px;
         padding: 10px;
         margin-left: 15px;
     }
@@ -1660,8 +1660,50 @@ body {
         font-size: 18px;
     }
 
+    .howBuy .container {
+        min-height: 941px;
+        padding-left: 20px;
+        width: 100%;
+    }
+
+    .header__desc {
+        padding-left: 0;
+    }
+
+    .header__image-1 {
+        margin-left: 15px;
+    }
+
+    .business-mobile {
+        padding-left: 0;
+    }
+
+    .business-section {
+        padding-left: 20px;
+    }
+
+    .header__image-1 {
+        margin-left: 44px;
+    }
+
+    .header__image-2 {
+        margin-left: 27px;
+    }
     .business-card__image img.ipad {
         max-width: 210px;
+    }
+ 
+
+    .forBuyers__cards.mobile--cards {
+        padding-left: 15px;
+    }
+
+    .blog {
+        margin-left: 0;
+    }
+
+    .footer__bottom {
+        margin-left: 20px;
     }
 
     .business-card__image img.iphone {
@@ -1673,55 +1715,134 @@ body {
     .business-card__title {
         font-size: 22px;
     }
-}
 
-@media (max-width: 375px) {
-    .header__image-1 {
-        width: 230px;
-        right: -15%;
+
+    .header__btn {
+        width: 320px;
     }
 
-    .header__image {
-        left: -18%;
+    .header__txt {
+        width: 350px;
+        height: 60px;
+
+        font-size: 16px;
+    }
+}
+
+
+
+@media (max-width: 383px) {
+    .header__image-1 {
+        margin-left: 40px;
     }
 
     .header__image-2 {
+        margin-left: 20px;
+    }
+
+    .forBuyers__card {
+        width: 330px;
+    }
+
+    .forSellers__card-desc-txt {
+        font-size: 11px;
+        width: 320px;
+
+    }
+
+    .forSellers__cards {
+        padding-left: 20px;
+    }
+    
+    .howBuy__card {
+        min-width: 220px;
+    }
+
+    .howBuy__card:nth-child(2) {
+        min-width: 230px;
+        height: 180px;
+    }
+
+    .howBuy .container {
+        min-height: 1100px;
+        padding-left: 40px;
+    }
+
+    .howBuy__card-txt {
+        font-size: 11px;
+    }
+
+    .howBuy__card-number-txt {
+        font-size: 15px;
+    }
+
+    .business-section {
+        padding-left: 10px;
+    }
+
+    .business-section__description {
+        font-size: 14px;
+    }
+
+    .business-card {
+        width: 335px;
+    }
+
+    .ads__card-txt {
         width: 300px;
     }
 
-    .header__title {
-        font-size: 45px;
+    .blog__card {
+        padding-left: 40px;
+    }
+    
+    .blog__card p {
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 350px) {
+
+    .forBuyers__card {
+        width: 320px;
     }
 
-    /* .advantages__image {
-        width: 330px;
-        ;
-    } */
-
-    .howBuy__title {
-        font-size: 40px;
+    .business-section__description {
+        width: 300px;
     }
 
-    .business-card__image img.ipad {
-        max-width: 170px;
+    .business-section__title {
+        width: 300px;
     }
 
-    .business-card__image img.iphone {
-        max-width: 70px;
-        left: 0;
-        top: 40px;
+    .blog__card {
+        padding-left: 15px;
     }
 
-    .ads__card-image {
-        width: 170px;
+    .footer__banner {
+        height: 120px;
     }
 
-    .footer__card-image {
-        width: 150px;
+    .business-card {
+        width: 315px;
     }
 
-    .footer__card-title {
-        font-size: 16px;
+    .howBuy .container {
+        min-height: 1130px;
     }
+
+    .banner__title::after {
+        display: none;
+    }
+
+    .header__image-1 {
+        margin-left: 30px;
+    }
+
+    .header__image-2 {
+        margin-left: 10px;
+    }
+
 }
 
